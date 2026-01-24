@@ -1,11 +1,8 @@
 services:
   php:
-    image: php:8.5-fpm-alpine
+    build: .
     volumes:
       - ./src:/var/www/html 
-    # Expose ports if needed for development or specific testing
-    # ports:
-    #   - "9000:9000"
     networks:
       - dev-network
 
