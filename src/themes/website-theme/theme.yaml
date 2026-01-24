@@ -1,0 +1,19 @@
+name: 'Website Theme'
+description: ''
+author: 'Stephen Hale'
+homepage: 'https://stephenhale.com'
+authorCode: ''
+code: ''
+parent: ''
+database: '0'
+
+form:
+    fields:
+        site_name:
+            label: Site name
+            comment: The website name as it should appear on the front-end
+            default: My Site
+        site_description:
+            label: Site Description
+            comment: The website description or slogan
+            default: 

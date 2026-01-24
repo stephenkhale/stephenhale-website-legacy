@@ -1,0 +1,24 @@
+title = "Resume"
+url = "/"
+layout = "Updated"
+is_hidden = 0
+==
+<section role="main">
+	<article class="resume">
+	    <section class="summary">
+            {% content 'resume/summary' %}
+        </section>
+
+		<section class="experience">
+			{% content 'resume/experience' %}
+		</section>
+
+		<section class="education">
+			{% content 'resume/education' %}
+		</section>
+
+		<section class="skills">
+			{% content 'resume/skills' %}
+		</section>
+	</article>
+</section>

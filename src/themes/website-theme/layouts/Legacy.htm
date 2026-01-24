@@ -1,0 +1,25 @@
+description = "Legacy Design"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ this.page.title }} - StephenHale.com</title>
+    <meta name="author" content="Stephen Hale"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="{{ [
+        'assets/css/reset.css',
+        'assets/css/legacy.css'
+    ]|theme }}">
+	{% styles %}
+</head>
+<body>
+
+<header role="banner">
+	<h1>Stephen Hale</h1>
+	<h2>Digital Architect</h2>
+</header>
+
+{% page %}
+
+{% partial 'google-analytics' %}
+</body>
