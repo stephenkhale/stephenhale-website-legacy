@@ -1,0 +1,27 @@
+title = "Experiment: ES6 Snake"
+url = "/experiment/es6-snake"
+layout = "Updated"
+is_hidden = 0
+==
+<html>
+<head>
+    <title>ES6 Snake</title>
+</head>
+<body>
+
+    <header>
+        <h1>Experiment: ES6 Snake Game</h1>
+        <small>Based on: <a href="https://github.com/JAStanton/Canvas-Snake">https://github.com/JAStanton/Canvas-Snake</a></small>
+    </header>
+
+    <br/><br/>
+    <canvas id="game-board" width="400" height="400"></canvas>
+    <br/><br/>
+    
+    <p>A simple canvas-based snake game updated to use ES6. Use spacebar to start and pause the game. Use the arrow keys to maneuver the snake.</p>
+
+    {% put scripts %}
+        <script src="{{ 'assets/js/es6-snake/snake.build.js'|theme }}"></script>
+    {% endput %}
+</body>
+</html>
