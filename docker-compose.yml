@@ -1,8 +1,9 @@
 services:
   php:
     build: .
+    command: sh -c "composer install --no-interaction"
     volumes:
-      - ./src:/var/www/html
+      - ./src:/var/www/html 
     networks:
       - dev-network
 
