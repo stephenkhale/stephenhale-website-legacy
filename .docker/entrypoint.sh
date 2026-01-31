@@ -7,5 +7,6 @@ else
   echo "Composer dependencies already installed."
 fi
 php artisan migrate
+php artisan october:migrate
 echo "Starting PHP-FPM..."
 php-fpm
