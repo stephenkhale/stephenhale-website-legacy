@@ -2,9 +2,8 @@ FROM php:8.5-fpm-alpine
 
 WORKDIR /var/www/html
 
-RUN apt-get install -y \
-    libzip-dev \
-    zip \
+RUN apk add --no-interactive \
+    libzip-dev zip libpng-dev \
     && docker-php-ext-install pdo_mysql zip gd
 
 COPY src .
