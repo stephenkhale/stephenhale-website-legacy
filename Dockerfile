@@ -1,7 +1,6 @@
 FROM php:8.5-fpm-alpine
 
 WORKDIR /var/www/html
-USER www-data
 
 RUN apk add --no-interactive \
     libzip-dev zip libpng-dev \
@@ -13,5 +12,7 @@ COPY --from=composer:2.9 /usr/bin/composer /usr/bin/composer
 
 COPY .docker/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
+
+USER www-data
 
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
