@@ -1,6 +1,7 @@
 FROM php:8.5-fpm-alpine
 
 WORKDIR /var/www/html
+USER www-data
 
 RUN apk add --no-interactive \
     libzip-dev zip libpng-dev \
