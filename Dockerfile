@@ -2,7 +2,10 @@ FROM php:8.5-fpm-alpine
 
 WORKDIR /var/www/html
 
-RUN docker-php-ext-install pdo_mysql zip gd
+RUN apt-get install -y \
+    libzip-dev \
+    zip \
+    && docker-php-ext-install pdo_mysql zip gd
 
 COPY src .
 
